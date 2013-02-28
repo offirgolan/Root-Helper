@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.rootpower.roothelper" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.DELETE_PACKAGES"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<application android:label="@string/app_name" android:icon="@drawable/root_helper_icon">
+		<activity android:name=".RootHelper" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".FirstTab" android:label="@string/app_name"
+			android:permission="android.permission.ACCESS_SUPERUSER">
+		</activity>
+		<activity android:name=".Home" android:label="@string/app_name"
+			android:permission="android.permission.ACCESS_SUPERUSER">
+		</activity>
+		<activity android:name=".SecondTab" android:permission="android.permission.ACCESS_SUPERUSER"
+			android:label="@string/app_name">
+		</activity>
+		<activity android:name=".ThirdTab" android:label="@string/app_name"
+			android:permission="android.permission.ACCESS_SUPERUSER">
+		</activity>
+		<activity android:name=".TermGroup" android:label="@string/app_name"
+			android:permission="android.permission.ACCESS_SUPERUSER">
+		</activity>
+		<activity android:name=".FileBrowser" android:label="@string/app_name"
+			android:permission="android.permission.ACCESS_SUPERUSER">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<action android:name="android.intent.action.EDIT" />
+				<action android:name="android.intent.action.DELETE" />
+				<action android:name="android.intent.action.INSERT" />
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT"></category>
+			</intent-filter>
+		</activity>
+		<activity android:name=".MainPreferences">
+		</activity>
+
+		<activity android:name=".Term" android:theme="@style/Theme"
+			android:launchMode="singleInstance" android:configChanges="keyboard|keyboardHidden|orientation"
+			android:windowSoftInputMode="adjustResize|stateVisible">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".TermPreferences" />
+
+	</application>
+</manifest>

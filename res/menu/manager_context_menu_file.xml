@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/delete" android:title="@string/delete"></item>
+	<item android:title="@string/rename" android:id="@+id/rename"></item>
+	<item android:title="@string/copy" android:id="@+id/copy"></item>
+	<item android:id="@+id/move" android:title="@string/move"></item>
+	<item android:title="@string/properties" android:id="@+id/properties"></item>
+	<item android:title="@string/send" android:id="@+id/send"></item>
+	<item android:title="@string/zip_file" android:id="@+id/zip_file"></item>
+    
+</menu>

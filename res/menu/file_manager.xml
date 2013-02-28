@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="@string/home" android:id="@+id/home"></item>
+	<item android:id="@+id/sdcard" android:title="@string/sdcard"></item>
+	<item android:id="@+id/new_folder" android:title="@string/new_folder"></item>
+	<item android:id="@+id/new_file" android:title="@string/new_file"></item>
+	<item android:title="@string/Tools" android:id="@+id/Tools">
+		<menu>
+			<item android:title="@string/paste" android:id="@+id/paste"></item>
+			<item android:id="@+id/flashzipfiles" android:title="@string/flash_zip_files"></item>
+			<item android:id="@+id/clearFlashList" android:title="@string/clear_flash_list"></item>
+		</menu>
+	</item><item android:title="@string/manager_preferences" android:id="@+id/manager_preferences"></item>
+	<item android:id="@+id/refresh" android:title="@string/refresh"></item><item android:id="@+id/mount_ro" android:title="@string/mount_ro"></item>
+	<item android:id="@+id/mount_rw" android:title="@string/mount_rw"></item>
+	
+	
+
+</menu>

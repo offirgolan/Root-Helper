@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:id="@+id/tab1Layout"
+	android:orientation="vertical" android:layout_width="fill_parent">
+	<Button android:text="Reboot" android:layout_width="fill_parent"
+		android:layout_height="60sp" android:id="@+id/reboot"></Button>
+	<Button android:layout_width="fill_parent" android:text="Reboot Recovery"
+		android:id="@+id/rebootRecovery" android:layout_height="60sp"></Button>
+	<Button android:layout_width="fill_parent" android:text="Reboot Bootloader"
+		android:id="@+id/rebootBootloader" android:layout_height="60sp"></Button>
+	<Button android:text="Backup Apps" android:id="@+id/backupApps" android:layout_height="60sp" android:layout_width="fill_parent"></Button>
+	<Button android:id="@+id/backupData" android:layout_height="60sp" android:text="Backup Data" android:layout_width="fill_parent"></Button>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="60sp" android:id="@+id/restoreApps" android:text="Restore Apps"></Button>
+	<Button android:layout_height="60sp" android:layout_width="fill_parent" android:id="@+id/restoreData" android:text="Restore Data"></Button>
+</LinearLayout>
